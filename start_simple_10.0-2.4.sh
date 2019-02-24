@@ -1,0 +1,1 @@
+docker run --name=postgis10_24_vim -d -e POSTGRES_USER=dani -e POSTGRES_PASS=password -e POSTGRES_DBNAME=gis -e ALLOW_IP_RANGE=0.0.0.0/0 -p 5431:5432 -v $HOME/postgis/data10:/var/lib/postgresql --restart=always postgis10_24_vim

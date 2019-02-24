@@ -1,0 +1,1 @@
+docker run --name=postgis96_24_vim -d -e POSTGRES_USER=dani -e POSTGRES_PASS=password -e POSTGRES_DBNAME=gis -e ALLOW_IP_RANGE=0.0.0.0/0 -p 5432:5432 -v $HOME/postgis/data96:/var/lib/postgresql --restart=always postgis96_24_vim
